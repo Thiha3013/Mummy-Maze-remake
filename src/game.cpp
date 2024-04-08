@@ -23,7 +23,8 @@ void Game::init() {
         return;
     }
 
-    window = SDL_CreateWindow("Mummy Maze", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 600, 0);
+    //window = SDL_CreateWindow("Mummy Maze", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 600, 0);
+    window = SDL_CreateWindow("Mummy Maze", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 800, 0);
     renderer = SDL_CreateRenderer(window, -1, 0);
 
     readInitialPositions("./data/map6_c.csv");
@@ -95,24 +96,28 @@ void Game::drawWall(std::string i, int row, int col) {
         // Do nothing
     }
     else if (i == "E"){
-        exit = {(col * 100) - 100, (row * 100) - 100, 100, 100};
+        //exit = {(col * 100) - 100, (row * 100) - 100, 100, 100};
+        exit = {(col * 100), (row * 100), 100, 100};
     }
     else if (i == "B") {
-        wall = {(col * 100) - 100, (row * 100) - 100, 100, 100};
+        //wall = {(col * 100) - 100, (row * 100) - 100, 100, 100};
+        wall = {(col * 100), (row * 100), 100, 100};
         walls.push_back(wall);
     }
     else if (i == "1") {
-        wall = {(col * 100) - 105, (row * 100) - 105, 100, 10};
+        //wall = {(col * 100) - 105, (row * 100) - 105, 100, 10};
+        wall = {(col * 100) - 5, (row * 100) - 5, 100, 10};
         walls.push_back(wall);
     }
     else if (i == "2") {
-        wall = {(col * 100) - 105, (row * 100) - 105, 10, 100};
+        //wall = {(col * 100) - 105, (row * 100) - 105, 10, 100};
+        wall = {(col * 100) - 5, (row * 100) - 5, 10, 100};
         walls.push_back(wall);
     }
     else if (i == "3") {
-        wall = {(col * 100) - 105, (row * 100) - 105, 10, 100};
+        wall = {(col * 100) - 5, (row * 100) - 5, 10, 100};
         walls.push_back(wall);
-        wall = {(col * 100) - 105, (row * 100) - 105, 100, 10};
+        wall = {(col * 100) - 5, (row * 100) - 5, 100, 10}; // Corrected dimensions
         walls.push_back(wall);
     }
 }
