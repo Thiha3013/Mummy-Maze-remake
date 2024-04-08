@@ -1,0 +1,3 @@
+/Users/tha/coding/projects/Mummy Maze/build/CMakeFiles/SDL_Project.dir
+/Users/tha/coding/projects/Mummy Maze/build/CMakeFiles/edit_cache.dir
+/Users/tha/coding/projects/Mummy Maze/build/CMakeFiles/rebuild_cache.dir

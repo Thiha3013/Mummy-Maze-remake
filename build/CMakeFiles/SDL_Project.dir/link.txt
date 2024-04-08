@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/SDL_Project.dir/src/game.cpp.o CMakeFiles/SDL_Project.dir/src/main.cpp.o -o SDL_Project -F/Library/Frameworks  -Wl,-rpath,/Library/Frameworks /Library/Frameworks/SDL2.framework/Versions/A/SDL2 
