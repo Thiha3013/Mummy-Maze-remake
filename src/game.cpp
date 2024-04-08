@@ -27,8 +27,8 @@ void Game::init() {
     window = SDL_CreateWindow("Mummy Maze", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 800, 0);
     renderer = SDL_CreateRenderer(window, -1, 0);
 
-    readInitialPositions("./data/map6_c.csv");
-    drawCompleteWall("./data/map6_w.csv");
+    readInitialPositions("./data/maps/map6_c.csv");
+    drawCompleteWall("./data/maps/map6_w.csv");
 }
 
 void Game::run() {
