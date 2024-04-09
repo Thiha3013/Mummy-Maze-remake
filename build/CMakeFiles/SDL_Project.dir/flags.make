@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/Users/tha/coding/projects/Mummy Maze/header" -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks
+CXX_INCLUDES = -I"/Users/tha/coding/projects/Mummy Maze/header" -F/Library/Frameworks
 
 CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
 

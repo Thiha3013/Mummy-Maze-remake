@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL_Project.dir/src/game.cpp.o.d"
   "CMakeFiles/SDL_Project.dir/src/main.cpp.o"
   "CMakeFiles/SDL_Project.dir/src/main.cpp.o.d"
+  "CMakeFiles/SDL_Project.dir/src/utils.cpp.o"
+  "CMakeFiles/SDL_Project.dir/src/utils.cpp.o.d"
   "SDL_Project"
   "SDL_Project.pdb"
 )

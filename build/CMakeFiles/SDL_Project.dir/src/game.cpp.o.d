@@ -329,6 +329,7 @@ CMakeFiles/SDL_Project.dir/src/game.cpp.o: \
   /Library/Frameworks/SDL2.framework/Headers/SDL_version.h \
   /Library/Frameworks/SDL2.framework/Headers/SDL_locale.h \
   /Library/Frameworks/SDL2.framework/Headers/SDL_misc.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_image.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__algorithm/copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h \
@@ -823,6 +824,7 @@ CMakeFiles/SDL_Project.dir/src/game.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__ios/fpos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__string/extern_template_lists.h \
+  /Users/tha/coding/projects/Mummy\ Maze/header/utils.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__locale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/locale.h \

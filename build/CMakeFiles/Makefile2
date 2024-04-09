@@ -81,12 +81,12 @@ clean: CMakeFiles/SDL_Project.dir/clean
 CMakeFiles/SDL_Project.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Project.dir/build.make CMakeFiles/SDL_Project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Project.dir/build.make CMakeFiles/SDL_Project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/tha/coding/projects/Mummy Maze/build/CMakeFiles" --progress-num=1,2,3 "Built target SDL_Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/tha/coding/projects/Mummy Maze/build/CMakeFiles" --progress-num=1,2,3,4 "Built target SDL_Project"
 .PHONY : CMakeFiles/SDL_Project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SDL_Project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tha/coding/projects/Mummy Maze/build/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tha/coding/projects/Mummy Maze/build/CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SDL_Project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tha/coding/projects/Mummy Maze/build/CMakeFiles" 0
 .PHONY : CMakeFiles/SDL_Project.dir/rule

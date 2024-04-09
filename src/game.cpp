@@ -1,17 +1,19 @@
 #include "game.h"
+#include "utils.h"
 #include <fstream>
 #include <iostream>
 #include <sstream>
 #include <algorithm>
 #include <cctype>
 
-Game::Game() : window(nullptr), renderer(nullptr), running(true) {
+Game::Game() : window(nullptr), renderer(nullptr), texture(nullptr), running(true) {
     dot = {-100, -100, 90, 90};
     mummy = {-200, -200, 90, 90};
     exit = {-300, -300, 100, 100};
 }
 
 Game::~Game() {
+    SDL_DestroyTexture(texture);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
@@ -29,6 +31,7 @@ void Game::init() {
 
     readInitialPositions("./data/maps/map6_c.csv");
     drawCompleteWall("./data/maps/map6_w.csv");
+    dotTexture = loadTexture("./data/assets/player");
 }
 
 void Game::run() {
@@ -85,10 +88,25 @@ void Game::run() {
 }
 
 void Game::cleanup() {
+    SDL_DestroyTexture(texture);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
 }
+
+
+SDL_Texture* Game::loadTexture(const std::string& filename){
+    SDL_Surface* surface = IMG_Load(filename.c_str());
+    if (surface == nullptr){
+        return nullptr;
+    }
+
+    SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
+    SDL_FreeSurface(surface);
+
+    return texture;
+}
+
 
 void Game::drawWall(std::string i, int row, int col) {
     SDL_Rect wall;
@@ -276,22 +294,4 @@ bool Game::checkCollisionWithAny(const SDL_Rect& obj1 , const std::vector<SDL_Re
         if (checkCollision(obj1, wall)) return true;
     }
     return false;
-}
-
-std::string Game::trim(const std::string& str) {
-    std::string result = str;
-    result.erase(result.begin(), std::find_if(result.begin(), result.end(), [](unsigned char ch) {
-        return !std::isspace(ch);
-    }));
-    result.erase(std::find_if(result.rbegin(), result.rend(), [](unsigned char ch) {
-        return !std::isspace(ch);
-    }).base(), result.end());
-    return result;
-}
-
-std::string Game::removeBOM(const std::string& str) {
-    if (str.size() >= 3 && str[0] == '\xEF' && str[1] == '\xBB' && str[2] == '\xBF') {
-        return str.substr(3);
-    }
-    return str;
 }

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/tha/coding/projects/Mummy Maze/src/game.cpp" "CMakeFiles/SDL_Project.dir/src/game.cpp.o" "gcc" "CMakeFiles/SDL_Project.dir/src/game.cpp.o.d"
   "/Users/tha/coding/projects/Mummy Maze/src/main.cpp" "CMakeFiles/SDL_Project.dir/src/main.cpp.o" "gcc" "CMakeFiles/SDL_Project.dir/src/main.cpp.o.d"
+  "/Users/tha/coding/projects/Mummy Maze/src/utils.cpp" "CMakeFiles/SDL_Project.dir/src/utils.cpp.o" "gcc" "CMakeFiles/SDL_Project.dir/src/utils.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

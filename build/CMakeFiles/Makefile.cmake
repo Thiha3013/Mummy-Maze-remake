@@ -7,8 +7,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config-version.cmake"
-  "/Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config.cmake"
   "/Users/tha/coding/projects/Mummy Maze/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
@@ -26,7 +24,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Compiler/Clang.cmake"
   "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Compiler/GNU.cmake"
-  "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FeatureSummary.cmake"
   "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake"
   "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake"
   "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Platform/Apple-Clang-C.cmake"
