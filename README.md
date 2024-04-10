@@ -9,4 +9,4 @@
 5. UI improvement<br>
 5. executable<br>
 6. add multiple maps<br>
-7. add more features(traps, red mummy, scorpian)<br>
+7. more features(traps, red mummy, scorpian)?<br>
